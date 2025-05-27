@@ -15,7 +15,7 @@ import os
 model_path = 'clf.pkl'
 vectorizer_path = 'tfidf.pkl'
 encoder_path = 'encoder.pkl'
-
+os.path.exists(model_path)
 if not os.path.exists(model_path):
     raise FileNotFoundError(f"Model file not found: {model_path}")
 if not os.path.exists(vectorizer_path):
